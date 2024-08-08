@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'fontawesome';
+    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+         url('fonts/fontawesome-webfont.woff') format('woff'),
+         url('fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('fonts/fontawesome-webfont.svg') format('svg');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+i{
+    font-family: 'fontawesome';
+}
+.blog_main_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.left_sidebar{
+    width: 220px;
+    padding: 40px;
+}
+.main_blog{
+    width: calc(100% - 300px);
+    background: #f3f3f3;
+}
+.mobile_blog_head{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    z-index: 150;
+}
+.mobile_blog_head .mobile_logo img{
+    height: calc(100% - 30px);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.mobile_blog_head .mobile_menu{
+    margin-right: 15px;
+    width: 30px;
+    margin-top: 15px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.mobile_menu_polosa{
+    width: 100%;
+    height: 3px;
+    background: #232D37;
+}
+h1{
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    color: #afafaf;
+}
+.left_sidebar ul{
+    margin-top: 6rem;
+    list-style: none;
+}
+.left_sidebar ul li a{
+    text-decoration: none;
+    color: #888;
+    font-size: 18px;
+    line-height: 34px;
+    font-family: "Roboto", sans-serif;
+}
+.blog_head{
+    max-height: 400px;
+    overflow: hidden;
+}
+.blog_head img{
+    width: 100%;
+}
+.blog_main_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    position: relative;
+    padding-bottom: 120px;
+}
+.blog_main_content .blog_article{
+    width: calc(25% - 40px);
+    margin-bottom: 40px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    margin:20px;
+}
+.blog_main_content .blog_article img{
+    width: 100%;
+}
+.blog_button_more{
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    left: 0;
+}
+.blog_button_more button{
+    color: #fff;
+    background: #fab526;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
+}
+.blog_article a{
+    text-decoration: none;
+}
+.blog_article h3{
+    padding: 20px;
+    color: #4B555F;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.blog_article p{
+    padding: 0px 20px 20px;
+    color: #949494;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    word-break: break-word;
+}
+.blog_article .date_comments{
+    padding-bottom: 20px;
+}
+.blog_article .date_comments span{
+    padding: 0px 20px 20px;
+    color: #949494;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.blog_article .date_comments span i{
+    margin-right: 5px;
+    font-size: 15px;
+}
+.blog_footer{
+    background: #171717;
+    color: #b9b9b9;
+    padding: 40px;
+}
+.blog_footer_cols{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blog_footer_cols .footer_col{
+    margin: 0px 20px 40px;
+    font-family: "Roboto", sans-serif;
+}
+.blog_footer_cols .footer_col h3{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.blog_footer_cols .footer_col h3:after{ 
+    display: block;
+    content: ' ';
+    height: 2px;
+    width: 30px;
+    margin: 10px 0 0 0;
+    background: #f4bb7a;
+}
+.blog_footer_cols .footer_col p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.blog_footer_copyright p{
+    text-align: center;
+    font-weight: bold;
+}
+.blog_footer_copyright p a{
+    color: #b9b9b9;
+}
+.blog_statia_content{
+    margin: 40px;
+    box-shadow: 0 0.3rem 1.8rem rgba( 5, 10, 15, 0.07 );
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.blog_statia_content_container{
+    width: 940px;
+    margin: 40px auto;
+}
+.blog_statia_content_container h2, .blog_statia_content_container p{
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+.blog_statia_content_container h2{
+    font-size: 32px;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+.blog_statia_content_container p{   
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.blog_statia_content_container img{
+    max-width: 100%;
+    margin: 0 auto 20px;
+    display: block;
+}
+.blog_statia_content_container span{
+    margin-right: 25px;
+    color: #69737D;
+}
+.blog_statia_content_container span i{
+    margin-right: 5px;
+}
+.blog_statia_content_container .comments textarea, .blog_statia_content_container .comments input[type="text"]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: #7D8791;
+}
+.blog_statia_content_container .comments form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog_statia_content_container .comments .pol_polya{
+    width:calc(50% - 15px);
+}
+.blog_statia_content_container .comments .pole{
+    width: 100%;
+}
+.pole textarea, .pole input, .pol_polya input{
+    border: 1px solid #DCDFE2;
+    color: #DCDFE2;
+    border-radius:5px;
+}
+.pole label, .pol_polya label{
+    color: #7D8791;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+.comments .pole button{
+    color: #fff;
+    background: #fab526;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    border-radius: 3px;
+    margin: 20px auto 0;
+    display: block;
+}
